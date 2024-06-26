@@ -1,0 +1,19 @@
+{
+  "apps": [
+    {
+      "name": "example-example",
+      "script": "src/index.js",
+      "instances": 1,
+      "autorestart": true,
+      "watch": true,
+      "ignore_watch": ["logs"],
+      "watchOptions": {
+        "ignored": ["logs/*", ".git/*"]
+      },
+      "time": true,
+      "env": {
+        "NODE_ENV": "production"
+      }
+    }
+  ]
+}
